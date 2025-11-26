@@ -15,8 +15,8 @@ class FeedbackGenerator:
             similarity_score = round(similarity * 100, 2)
             
             # Check if pronunciation is perfect or near-perfect
-            if similarity_score >= 98 and phoneme_data and phoneme_data.get('phoneme_error_rate', 0) < 2:
-                return "Excellent! Your pronunciation is perfect. Let's try something more challenging to continue improving."
+            # if similarity_score >= 98 and phoneme_data and phoneme_data.get('phoneme_error_rate', 0) < 2:
+            #     return "Excellent! Your pronunciation is perfect. Let's try something more challenging to continue improving."
             
             phoneme_error_rate = 0
             phoneme_errors_desc = "No phoneme data available"
